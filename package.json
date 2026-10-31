@@ -1,0 +1,34 @@
+{
+  "name": "qe-agentic-playwright-spotlightstores",
+  "version": "1.0.0",
+  "description": "AI-native Playwright QA framework for the Spotlight Stores Australia storefront",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:ui": "playwright test --ui",
+    "report": "npx playwright show-report",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results"
+  },
+  "keywords": [
+    "playwright",
+    "spotlight-stores",
+    "ecommerce",
+    "automation",
+    "qa"
+  ],
+  "author": "ragulkulandaivelu",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.0.0",
+    "allure-commandline": "^2.46.1",
+    "allure-playwright": "^3.12.2",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4"
+  }
+}
